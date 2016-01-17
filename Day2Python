@@ -1,0 +1,12 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+price = float(raw_input())
+tipPercentage = int(raw_input())
+taxPercentage = int(raw_input())
+
+def finalPrice(price, tipPercentage, taxPercentage):
+    tip = (price * tipPercentage)/100
+    tax = (price * taxPercentage)/100
+    return (price + tip + tax)
+
+total = finalPrice(price , tipPercentage, taxPercentage)
+print "The final price of the meal is $" + str(int(total+0.5)) + "."
